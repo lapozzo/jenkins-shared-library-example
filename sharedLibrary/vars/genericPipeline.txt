@@ -1,0 +1,3 @@
+# Help for Generic Pipeline
+
+Example of help contents.
