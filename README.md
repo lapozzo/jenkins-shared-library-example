@@ -1,6 +1,6 @@
 # Jenkins Shared Library Example
 
-The purpose of sharing parts of a pipeline is to avoid redundancies, promote reuse, and facilitate maintenance. This can be achieved through the [Jenkins Shared Libraries](https://jenkins.io/doc/book/pipeline/shared-libraries/) feature as follow example.
+The purpose of sharing parts of a pipeline is to avoid redundancies, promoting reuse and facilitate maintenance. In the Jenkins this can be achieved through the [Jenkins Shared Libraries](https://jenkins.io/doc/book/pipeline/shared-libraries/) feature as follow example.
 
 ## Start up Jenkins
 
@@ -16,14 +16,15 @@ The purpose of sharing parts of a pipeline is to avoid redundancies, promote reu
 ## Configure the shared library in the Jenkins
 
 * Access option Manage Jenkins/Configure System
-* Add a Global Pipeline Libraries as example below
+* Add a Global Pipeline Libraries
+* Expected result:
 
 ![Shared library configuration](static/01.png)
 
 
 ## Create a Pipeline Job
 
-* Configure the Pipeline Job as example below
+* Configure the Pipeline Job with the pipeline script below
 
 
 Pipeline script content:
@@ -37,7 +38,7 @@ genericPipeline {
 ```
 
 * Disable "Use Groovy Sandbox"
-
+* Expected result:
 
 ![Create a Pipeline Job](static/02.png)
 
@@ -45,7 +46,7 @@ genericPipeline {
 
 
 * Execute the job and and verify the log
-
+* Expected result:
 
 ![Job execution log](static/03.png)
 
