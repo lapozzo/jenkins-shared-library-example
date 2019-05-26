@@ -11,7 +11,7 @@ The purpose of sharing parts of a pipeline is to avoid redundancies, promote reu
 
 ## Create a Shared Library (respecting the [directory structure](https://jenkins.io/doc/book/pipeline/shared-libraries/))
 
-* Example in the sharedLibrary folder
+* Example in the "vars" folder
 
 ## Configure the shared library in the Jenkins
 
@@ -19,9 +19,9 @@ The purpose of sharing parts of a pipeline is to avoid redundancies, promote reu
 * Add a Global Pipeline Libraries as example below
 
 
-## Create a Job
+## Create a Pipeline Job
 
-* Configure the Job as example below
+* Configure the Pipeline Job as example below
 
 ```json
 genericPipeline {
