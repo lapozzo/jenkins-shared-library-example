@@ -6,17 +6,17 @@ The purpose of sharing parts of a pipeline is to avoid redundancies, promoting r
 
 * docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins:alpine
 * Access https://localhost:8080
-* Copy and paste the admin password printed in the "docker run" console
+* Copy and paste the admin password printed in the *docker run* console
 * Select the install default plugins option
 
 ## Create a Shared Library (respecting the [directory structure](https://jenkins.io/doc/book/pipeline/shared-libraries/#directory-structure))
 
-* Example in the "vars" folder
+* Example in the *vars* folder
 
 ## Configure the shared library in the Jenkins
 
 * Access option Manage Jenkins/Configure System
-* Add a Global Pipeline Libraries
+* Add a Global Pipeline Libraries configuration
 * Expected result:
 
 ![Shared library configuration](static/01.png)
@@ -37,18 +37,28 @@ genericPipeline {
 }
 ```
 
-* Disable "Use Groovy Sandbox"
+* Disable *Use Groovy Sandbox*
 * Expected result:
 
 ![Create a Pipeline Job](static/02.png)
 
 
+## Run the Pipeline Job
 
-
-* Execute the job and and verify the log
+* Run the job through the *Build Now*
+* Verify the log
 * Expected result:
 
 ![Job execution log](static/03.png)
 
 
-Source: https://jenkins.io/doc/book/pipeline/shared-libraries/
+## Accessing the generic pipeline help
+
+* Access the job/Pipeline Syntax/Global Variables Reference
+* Expected result:
+
+![Job execution log](static/04.png)
+
+
+
+######Source: https://jenkins.io/doc/book/pipeline/shared-libraries/
